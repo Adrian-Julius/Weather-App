@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- Icon link-->
+    <link
+      rel="shortcut icon"
+      href="./assets/weatherAppIcon.webp"
+      type="image/x-icon"
+    />
+
+    <!-- CSS link-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/weatherAppLogo.webp" alt="" />
+      <h2>Weather App</h2>
+      <img src="./assets/weatherAppLogo.webp" alt="" />
+    </header>
+
+    <div class="weatherContainer">
+      <input id="inputCity" type="text" placeholder="Input City" /><br />
+      <button type="submit" onclick="weatherShow()">Get Weather</button>
+
+      <div class="weatherInfo">
+        <h2 class="city"></h2>
+        <p class="temp"></p>
+        <p class="humidity"></p>
+        <p class="description"></p>
+        <p class="weatherEmoji"></p>
+      </div>
+    </div>
+
+    <footer>
+      <h3>© 2024 Adrian Julius Villaruel. All rights reserved.</h3>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

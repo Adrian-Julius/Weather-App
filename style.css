@@ -1,0 +1,149 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+/* HEADER AND FOOTER STYLING */
+header,
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 5px 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgba(0, 151, 197, 0.923);
+}
+
+header img {
+  width: 50px;
+}
+
+header h2 {
+  padding: 0 5px;
+}
+
+/* WEATHER APP CONTAINER */
+.weatherContainer {
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  margin: 5vh auto;
+  padding: 0 3%;
+}
+
+.weatherContainer input {
+  margin-bottom: 1vh;
+  width: 250px;
+
+  font-size: 1.75em;
+  border-radius: 5px;
+}
+
+.weatherContainer button {
+  padding: 4.5px 15px;
+  width: 250px;
+
+  font-size: 1.75em;
+  color: white;
+  background-color: rgb(46, 196, 46);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.weatherContainer input:hover {
+  transition: transform 0.2s linear;
+  transform: scale(1.02);
+}
+
+.weatherContainer button:hover {
+  transition: background-color 0.2s linear;
+  background-color: rgb(5, 229, 5);
+  box-shadow: 0 0 5px 2px green;
+}
+
+.weatherContainer button:active {
+  transition: background-color 0.2s linear;
+  background-color: rgb(212, 255, 0);
+  box-shadow: 0 0 5px 1px rgb(255, 255, 167);
+}
+
+.weatherInfo {
+  /* visibility: hidden; */
+  width: 400px;
+  padding: 10px 10px;
+  margin: 40px auto;
+
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    180deg,
+    rgb(78, 146, 255),
+    rgb(255, 234, 196)
+  );
+
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 5px black;
+}
+
+.city,
+.temp {
+  margin-bottom: 10px;
+  font-size: 2.3em;
+  font-weight: bolder;
+}
+
+.description {
+  margin-bottom: 5px;
+  font-style: italic;
+  font-size: 1.7em;
+}
+
+.weatherEmoji {
+  margin: 0;
+  font-size: 5em;
+}
+
+@media (max-width: 700px) {
+  .weatherInfo {
+    width: 70vw;
+    padding: 10px 10px;
+  }
+
+  .weatherContainer input,
+  .weatherContainer button {
+    width: 40%;
+    min-width: 150px;
+  }
+
+  .weatherContainer button {
+    font-size: 1.2em;
+  }
+
+  .city,
+  .temp {
+    font-size: 1.7em;
+    font-weight: bolder;
+  }
+
+  .description {
+    font-style: italic;
+    font-size: 1.2em;
+  }
+
+  .weatherEmoji {
+    margin: 0;
+    font-size: 4em;
+  }
+}
